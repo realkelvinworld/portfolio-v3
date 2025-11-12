@@ -1,6 +1,6 @@
 "use client";
+import { BriefcaseBusinessIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
-import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
@@ -56,18 +56,6 @@ export default function Home() {
           >
             Email
           </Link>
-          <Link
-            href={routes.about}
-            className="transition-transform duration-200 hover:scale-105"
-          >
-            About me
-          </Link>
-          <Link
-            href={routes.mywork}
-            className="transition-transform duration-200 hover:scale-105"
-          >
-            My Work
-          </Link>
         </div>
       </div>
 
@@ -76,16 +64,16 @@ export default function Home() {
         <Button
           className="rounded-full bg-white text-black hover:bg-neutral-800 hover:text-white"
           variant={"default"}
-          onClick={() => router.push(routes.me)}
+          onClick={() => router.push(routes.portfolio)}
         >
           Visit Portfolio
-          <ChevronRight />
+          <BriefcaseBusinessIcon />
         </Button>
       </div>
 
       {/* Where i work */}
       <div className="absolute bottom-3 p-6">
-        <p className="font-medium  text-white">Experience</p>
+        <p className="font-medium  text-white">Working at</p>
         <div className="flex flex-col space-y-0.5">
           <Link
             href={"https://www.inpathgroup.africa/"}

@@ -1,18 +1,37 @@
 "use client";
 import { menuItems } from "@/routes";
-import { usePathname, useRouter } from "next/navigation";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
+import { JSX } from "react";
 
-export default function Navbar() {
+export default function Navbar({
+  page,
+  setPage,
+}: {
+  page: {
+    slug: string;
+    component: JSX.Element;
+  };
+  setPage: React.Dispatch<
+    React.SetStateAction<{
+      slug: string;
+      component: JSX.Element;
+    }>
+  >;
+}) {
   /**
-   * Navigation
+   * Function
    */
-  const router = useRouter();
-  const pathname = usePathname();
+
+  const handlePageChange = (slug: string, component: JSX.Element) => {
+    setPage({
+      slug: slug,
+      component: component,
+    });
+  };
 
   return (
     <div className="flex">
@@ -20,12 +39,12 @@ export default function Navbar() {
         <Tooltip key={index}>
           <div className="flex gap-2 -ml-2 hover:z-50">
             <TooltipTrigger
-              className={`rounded-full size-9 flex justify-center items-center hover:scale-y-105 border ${
-                pathname === n.route
+              className={`rounded-full size-9 flex justify-center items-center hover:scale-y-105 shadow-xs ${
+                page.slug === n.slug
                   ? `bg-black text-white hover:text-white`
-                  : `bg-white text-black hover:text-black border`
+                  : `bg-white text-black hover:text-black border-[0.2px] border-accent`
               }`}
-              onClick={() => router.push(n.route)}
+              onClick={() => handlePageChange(n.slug, n.route)}
             >
               {n.icon}
 

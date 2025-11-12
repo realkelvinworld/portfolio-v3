@@ -1,3 +1,8 @@
+import About from "@/components/views/about";
+import Contact from "@/components/views/contact";
+import Me from "@/components/views/me";
+import Mywork from "@/components/views/my-work";
+import Skills from "@/components/views/skills";
 import {
   AddressBookIcon,
   CodeIcon,
@@ -7,7 +12,7 @@ import {
 } from "@phosphor-icons/react";
 
 export const routes = {
-  me: "/me",
+  portfolio: "/portfolio",
   about: "/about",
   mywork: "/my-work",
   skills: "/skills",
@@ -17,27 +22,32 @@ export const routes = {
 export const menuItems = [
   {
     title: "Me",
-    icon: <PersonIcon />,
-    route: routes.me,
+    slug: "me",
+    icon: <PersonIcon weight="bold" />,
+    route: <Me />,
   },
   {
     title: "About Me",
-    icon: <QuestionIcon />,
-    route: routes.about,
+    slug: "about",
+    icon: <QuestionIcon weight="bold" />,
+    route: <About />,
   },
   {
     title: "Skills",
-    icon: <CodeIcon />,
-    route: routes.skills,
+    slug: "skills",
+    icon: <CodeIcon weight="bold" />,
+    route: <Skills />,
   },
   {
     title: "My work",
-    icon: <NotchesIcon />,
-    route: routes.mywork,
+    slug: "works",
+    icon: <NotchesIcon weight="bold" />,
+    route: <Mywork />,
   },
   {
     title: "Contact",
-    icon: <AddressBookIcon />,
-    route: routes.contact,
+    slug: "contact",
+    icon: <AddressBookIcon weight="bold" />,
+    route: <Contact />,
   },
 ];
