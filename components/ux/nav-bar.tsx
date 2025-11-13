@@ -41,8 +41,8 @@ export default function Navbar({
             <TooltipTrigger
               className={`rounded-full size-9 flex justify-center items-center hover:scale-y-105 shadow-xs ${
                 page.slug === n.slug
-                  ? `bg-black text-white hover:text-white`
-                  : `bg-white text-black hover:text-black border-[0.2px] border-accent`
+                  ? `bg-black text-white hover:text-white border-none`
+                  : `bg-white text-black hover:text-black border`
               }`}
               onClick={() => handlePageChange(n.slug, n.route)}
             >

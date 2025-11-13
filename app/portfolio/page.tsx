@@ -14,14 +14,14 @@ export default function Page() {
   });
 
   return (
-    <div className="h-screen flex flex-col  items-start max-w-3xl mx-auto">
-      <div className="my-14 mx-4">
+    <div className="h-screen flex flex-col  items-start max-w-lg mx-auto ">
+      <div className="my-28 px-4 mx-auto w-full h-full">
         {/* Nav */}
         <div className="fixed">
           <Navbar page={page} setPage={setPage} />
         </div>
 
-        <div className="my-10 overflow-y-auto">{page.component}</div>
+        <div className="my-10 h-full overflow-hidden">{page.component}</div>
       </div>
     </div>
   );
