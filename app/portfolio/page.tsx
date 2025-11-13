@@ -15,7 +15,7 @@ export default function Page() {
 
   return (
     <div className="h-screen flex flex-col  items-start max-w-lg mx-auto ">
-      <div className="my-28 px-4 mx-auto w-full h-full">
+      <div className="lg:my-28 my-14 px-4 mx-auto w-full h-full">
         {/* Nav */}
         <div className="fixed">
           <Navbar page={page} setPage={setPage} />
