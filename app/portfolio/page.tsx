@@ -13,13 +13,13 @@ export default function Page() {
 
   return (
     <div className="h-screen flex flex-col  items-start max-w-lg mx-auto ">
-      <div className="lg:my-28 my-14 px-4 mx-auto w-full h-full">
+      <div className="lg:my-28 my-10 px-4 mx-auto w-full h-full">
         {/* Nav */}
-        <div className="fixed">
+        <div className="sticky top-10">
           <Navbar />
         </div>
 
-        <div className="my-10 h-full overflow-y-auto overflow-x-hidden">
+        <div className="my-10 h-full">
           {CurrentView ? <CurrentView /> : null}
         </div>
       </div>
