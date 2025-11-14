@@ -23,7 +23,7 @@ export default function Me() {
     {
       id: 2,
       description:
-        "Design and develop secure and scalable mobile applications with React / React Native",
+        "Design and develop secure and scalable mobile applications with  React Native",
     },
     {
       id: 3,
@@ -40,7 +40,7 @@ export default function Me() {
       image: Zedi,
       projectName: "Zedi - Crypto to Cash",
       description:
-        "Zedi is a mobile app that makes managing crypto and Cedis easy. Instantly convert Bitcoin, USDT, Ethereum  and other crypto currencies to Ghanaian Cedis, pay bills, send money all in one secure and simple app",
+        "Zedi is a mobile app that makes managing crypto and Cedis easy. Convert any supported cryptocurrency to Cedis, pay bills, and send money all in one simple app.",
       projectUrl: "https://www.zedi.app/",
       urlSlug: "zedi.app",
       tags: ["Next.js", "Framer", "Crypto"],
@@ -65,26 +65,26 @@ export default function Me() {
       <div className="py-4 font-sans">
         <div className="flex flex-col space-y-1">
           <section>
-            <h1 className="text-xl text-gray-600  font-medium">
+            <h1 className="text-2xl text-gray-900  font-semibold">
               Hi, I&apos;m Kelvin Kumordzi
             </h1>
           </section>
-          <p className="text-gray-500 font-medium">Software Engineer</p>
+          <p className="text-gray-400 font-medium">Software Engineer</p>
           <hr className="my-2" />
         </div>
 
         {/* A little about me */}
         <div>
-          <p className="text-gray-600">
+          <p className="text-gray-600 text-sm">
             I build{" "}
-            <span className="font-polySans font-semibold text-cyan-800/60">
+            <span className=" font-medium text-gray-900">
               web & mobile apps
             </span>{" "}
             , squash bugs, and sometimes touch grass 😅
           </p>
 
           <section className="py-4">
-            <h2 className="text-lg text-gray-600  font-medium">
+            <h2 className="text-lg text-gray-900  font-medium">
               What I can build{" "}
             </h2>
 
@@ -100,8 +100,8 @@ export default function Me() {
 
         {/* What i am working on Now */}
         <div className="flex flex-col space-y-3">
-          <h2 className="text-lg text-gray-600  font-medium">
-            What I&apos;m Currently Working On{" "}
+          <h2 className="text-lg text-gray-900  font-medium">
+            What I&apos;m Working On{" "}
           </h2>
 
           {/* card */}
@@ -119,13 +119,15 @@ export default function Me() {
                     className="w-3"
                   />
                 </div>
-                <p className=" font-medium  text-gray-700 my-2">
+                <p className=" font-medium  lg:text-base text-sm text-gray-700 my-2">
                   {c.projectName}
                 </p>
               </section>
 
               <section>
-                <p className="text-sm text-gray-600">{c.description}</p>
+                <p className="lg:text-sm text-xs text-gray-600 leading-loose">
+                  {c.description}
+                </p>
               </section>
 
               <section className="flex justify-between items-center">
