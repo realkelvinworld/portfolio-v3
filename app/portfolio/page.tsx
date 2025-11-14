@@ -19,9 +19,7 @@ export default function Page() {
           <Navbar />
         </div>
 
-        <div className="my-10 h-full">
-          {CurrentView ? <CurrentView /> : null}
-        </div>
+        <div className="h-full">{CurrentView ? <CurrentView /> : null}</div>
       </div>
     </div>
   );

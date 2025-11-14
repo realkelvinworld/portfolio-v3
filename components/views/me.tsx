@@ -119,7 +119,7 @@ export default function Me() {
                     className="w-3"
                   />
                 </div>
-                <p className="font-medium font-polySans text-gray-700 my-2">
+                <p className="font-polySans font-medium  text-gray-700 my-2">
                   {c.projectName}
                 </p>
               </section>
