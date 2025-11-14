@@ -65,7 +65,7 @@ export default function Me() {
       <div className="py-4 font-sans">
         <div className="flex flex-col space-y-1">
           <section>
-            <h1 className="text-xl text-gray-600 font-polySans font-medium">
+            <h1 className="text-xl text-gray-600  font-medium">
               Hi, I&apos;m Kelvin Kumordzi
             </h1>
           </section>
@@ -84,7 +84,7 @@ export default function Me() {
           </p>
 
           <section className="py-4">
-            <h2 className="text-lg text-gray-600 font-polySans font-medium">
+            <h2 className="text-lg text-gray-600  font-medium">
               What I can build{" "}
             </h2>
 
@@ -100,7 +100,7 @@ export default function Me() {
 
         {/* What i am working on Now */}
         <div className="flex flex-col space-y-3">
-          <h2 className="text-lg text-gray-600 font-polySans font-medium">
+          <h2 className="text-lg text-gray-600  font-medium">
             What I&apos;m Currently Working On{" "}
           </h2>
 
@@ -119,7 +119,7 @@ export default function Me() {
                     className="w-3"
                   />
                 </div>
-                <p className="font-polySans font-medium  text-gray-700 my-2">
+                <p className=" font-medium  text-gray-700 my-2">
                   {c.projectName}
                 </p>
               </section>
