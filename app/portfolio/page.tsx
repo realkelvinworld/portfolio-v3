@@ -19,7 +19,7 @@ export default function Page() {
           <Navbar />
         </div>
 
-        <div className="mt-8 h-full overflow-hidden">
+        <div className="my-10 h-full overflow-y-auto overflow-x-hidden">
           {CurrentView ? <CurrentView /> : null}
         </div>
       </div>
