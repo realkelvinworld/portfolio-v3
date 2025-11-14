@@ -33,18 +33,18 @@ const polySans = localFont({
   src: [
     {
       path: "../public/Fonts/PolySansPro/PolySans-Bulky.woff2",
-      weight: "700",
-      style: "bold",
+      weight: "900",
+      style: "normal",
     },
     {
       path: "../public/Fonts/PolySansPro/PolySans-Neutral.woff2",
-      weight: "400",
+      weight: "500",
       style: "normal",
     },
     {
       path: "../public/Fonts/PolySansPro/PolySans-Slim.woff2",
-      weight: "100",
-      style: "thin",
+      weight: "300",
+      style: "normal",
     },
   ],
   variable: "--font-polySans",
