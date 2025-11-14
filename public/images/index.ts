@@ -2,4 +2,6 @@
 import MeNow from "../../public/images/me-now.svg";
 import MeThen from "../../public/images/me-then.svg";
 
-export { MeNow, MeThen };
+import Zedi from "../../public/images/Logo.webp";
+
+export { MeNow, MeThen, Zedi };

@@ -5,33 +5,13 @@ import {
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { JSX } from "react";
+import { usePageStore } from "@/store/usePageStore";
 
-export default function Navbar({
-  page,
-  setPage,
-}: {
-  page: {
-    slug: string;
-    component: JSX.Element;
-  };
-  setPage: React.Dispatch<
-    React.SetStateAction<{
-      slug: string;
-      component: JSX.Element;
-    }>
-  >;
-}) {
+export default function Navbar() {
   /**
-   * Function
+   * Store
    */
-
-  const handlePageChange = (slug: string, component: JSX.Element) => {
-    setPage({
-      slug: slug,
-      component: component,
-    });
-  };
+  const { page, setPage } = usePageStore();
 
   return (
     <div className="flex">
@@ -40,11 +20,11 @@ export default function Navbar({
           <div className="flex gap-2 -ml-2 hover:z-50">
             <TooltipTrigger
               className={`rounded-full size-9 flex justify-center items-center hover:scale-y-105 shadow-xs ${
-                page.slug === n.slug
+                page === n.slug
                   ? `bg-black text-white hover:text-white border-none`
                   : `bg-white text-black hover:text-black border`
               }`}
-              onClick={() => handlePageChange(n.slug, n.route)}
+              onClick={() => setPage(n.slug)}
             >
               {n.icon}
 
