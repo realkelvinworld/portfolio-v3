@@ -1,4 +1,4 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import { Caveat, Geist, Geist_Mono } from "next/font/google";
 import localFont from "next/font/local";
 import type { Metadata } from "next";
 
@@ -13,6 +13,8 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+const caveat = Caveat({ subsets: ["latin"], variable: "--font-caveat" });
+
 const juniCode = localFont({
   src: [
     {
@@ -135,7 +137,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${polySans.variable} ${juniCode.variable} antialiased`}
+        className={`${geistSans.variable} ${caveat.variable}  ${geistMono.variable} ${polySans.variable} ${juniCode.variable} text-neutral-500
+           antialiased`}
       >
         {children}
       </body>

@@ -18,10 +18,7 @@ export default function Mywork() {
       viewOptions={{ margin: "0px 0px -350px 0px" }}
     >
       <div>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem quae
-        facilis exercitationem? Enim adipisci laborum quas sit, quo perspiciatis
-        totam accusantium similique harum pariatur molestiae, placeat nam vel,
-        dolores dicta!
+        <p>Coming soon...</p>
       </div>
     </InView>
   );

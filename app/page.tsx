@@ -84,7 +84,7 @@ export default function Home() {
       </div>
 
       {/* Where i work */}
-      <div className="absolute bottom-3 p-6">
+      {/* <div className="absolute bottom-3 p-6">
         <p className="text-white font-bold font-polySans text-base">
           Working at
         </p>
@@ -102,7 +102,7 @@ export default function Home() {
             Buildaf Company Limited
           </Link>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

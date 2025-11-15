@@ -1,12 +1,13 @@
 "use client";
 import { ChevronRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+
+import { TextEffect } from "../motion-primitives/text-effect";
+import { usePageStore } from "@/store/usePageStore";
 import { InView } from "../ui/in-view";
 import { Button } from "../ui/button";
-
-import { usePageStore } from "@/store/usePageStore";
-import Image from "next/image";
 import { Zedi } from "@/public/images";
-import Link from "next/link";
 
 export default function Me() {
   /**
@@ -64,33 +65,44 @@ export default function Me() {
     >
       <div className="py-4 font-sans">
         <div className="flex flex-col space-y-1">
-          <section>
-            <h1 className="text-2xl text-gray-900  font-semibold">
-              Hi, I&apos;m Kelvin Kumordzi
+          <section className="">
+            <h1 className="text-lg flex gap-1 text-neutral-900">
+              {/* Hi, I&apos;m{" "} */}
+              <TextEffect
+                per="char"
+                speedReveal={0.5}
+                className="font-caveat text-xl"
+              >
+                Kelvin Kumordzi
+              </TextEffect>
             </h1>
           </section>
-          <p className="text-gray-400 font-medium">Software Engineer</p>
+          <p className="text-gray-500">
+            Software Engineer at{" "}
+            <Link
+              href={"https://www.inpathgroup.africa/"}
+              className="hover:underline  text-green-900"
+            >
+              {" "}
+              Inpath Technologies{" "}
+            </Link>
+          </p>
           <hr className="my-2" />
         </div>
 
         {/* A little about me */}
         <div>
-          <p className="text-gray-600 text-sm">
-            I build{" "}
-            <span className=" font-medium text-gray-900">
-              web & mobile apps
-            </span>{" "}
-            , squash bugs, and sometimes touch grass 😅
+          <p className="text-sm">
+            I build <span className="text-neutral-900">web & mobile apps</span>
+            ,squash bugs, and sometimes touch grass
           </p>
 
           <section className="py-4">
-            <h2 className="text-lg text-gray-900  font-medium">
-              What I can build{" "}
-            </h2>
+            <h1 className="text-lg text-neutral-900">What I can do </h1>
 
             <ul className="list-disc ml-6">
               {skills.map((s, index) => (
-                <li key={index} className="py-2 text-sm text-gray-600">
+                <li key={index} className="py-2 text-sm">
                   {s.description}
                 </li>
               ))}
@@ -100,9 +112,9 @@ export default function Me() {
 
         {/* What i am working on Now */}
         <div className="flex flex-col space-y-3">
-          <h2 className="text-lg text-gray-900  font-medium">
+          <h1 className="text-lg text-neutral-900">
             What I&apos;m Working On{" "}
-          </h2>
+          </h1>
 
           {/* card */}
 
@@ -119,13 +131,13 @@ export default function Me() {
                     className="w-3"
                   />
                 </div>
-                <p className=" font-medium  lg:text-base text-sm text-gray-700 my-2">
+                <p className=" lg:text-base text-sm my-2 text-neutral-900">
                   {c.projectName}
                 </p>
               </section>
 
               <section>
-                <p className="lg:text-sm text-xs text-gray-600 leading-loose">
+                <p className="lg:text-sm text-xs leading-loose">
                   {c.description}
                 </p>
               </section>
@@ -135,7 +147,7 @@ export default function Me() {
                   {c.tags.map((t, index) => (
                     <p
                       key={index}
-                      className="text-xs rounded-3xl border bg-white px-2 py-1 tex-gray-500"
+                      className="text-xs rounded-3xl border bg-white px-2 py-1 tex-gray-500 text-neutral-900"
                     >
                       {t}
                     </p>
