@@ -12,7 +12,7 @@ export default function LoadingLayout({
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // Adjust the duration as needed
+    }, 4000); // Adjust the duration as needed
 
     return () => clearTimeout(timer);
   }, []);
@@ -21,7 +21,7 @@ export default function LoadingLayout({
     <>
       {isLoading ? (
         // Render only the loading animation during the loading phase
-        <div className="fixed inset-0 z-[9999999] flex items-center justify-center bg-white">
+        <div className="fixed inset-0 z-[9999999] flex items-center justify-center bg-black">
           <LoadingAnimation />
         </div>
       ) : (

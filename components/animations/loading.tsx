@@ -17,20 +17,24 @@ export function LoadingAnimation() {
     <AnimatePresence>
       {isVisible && (
         <motion.div
-          className="h-dvh w-dvw fixed top-0 left-0 bg-white z-[9999999] overflow-hidden flex flex-col items-center justify-center"
+          className="h-dvh w-dvw fixed top-0 left-0 bg-black z-[9999999] overflow-hidden flex flex-col items-center justify-center"
           initial={{ opacity: 1, filter: "blur(0px)" }}
-          exit={{ opacity: 0, filter: "blur(10px)" }}
-          transition={{ duration: 0.5 }}
+          exit={{ opacity: 0, filter: "blur(30px)" }}
+          transition={{
+            duration: 1.8,
+            ease: "easeInOut",
+          }}
         >
           <section className="flex flex-col space-y-4 items-center justify-center">
-            <h2 className="lg:text-[9rem] md:text-[6rem] text-4xl font-polySans font-bold    text-center   ">
+            <h2 className="lg:text-[9rem] md:text-[6rem] text-4xl font-polySans font-bold text-center">
               <TextEffect
                 per="char"
                 as="span"
+                speedReveal={0.7}
                 preset="fade"
-                className=" text-blue-600 text-center"
+                className="text-white text-center font-caveat"
               >
-                Kumordzi Kelvin
+                kelvin kumordzi
               </TextEffect>
             </h2>
           </section>

@@ -3,7 +3,8 @@ import { ArrowLeft, HomeIcon } from "lucide-react";
 import Link from "next/link";
 
 import { Button } from "@/components/ui/button";
-import Dither from "@/components/Dither";
+
+import Beams from "@/components/Beams";
 
 export default function NotFound() {
   return (
@@ -14,7 +15,7 @@ export default function NotFound() {
         position: "relative",
       }}
     >
-      <Dither
+      {/* <Dither
         waveColor={[0.9, 0.6, 0.8]}
         disableAnimation={false}
         enableMouseInteraction={true}
@@ -23,6 +24,16 @@ export default function NotFound() {
         waveAmplitude={0.3}
         waveFrequency={3}
         waveSpeed={0.03}
+      /> */}
+      <Beams
+        beamWidth={2}
+        beamHeight={15}
+        beamNumber={12}
+        lightColor="#ffffff"
+        speed={2}
+        noiseIntensity={1.75}
+        scale={0.2}
+        rotation={25}
       />
       <div className="absolute inset-0 flex flex-col items-center justify-center p-6">
         <div className="flex flex-col items-center gap-2">
