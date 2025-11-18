@@ -17,11 +17,13 @@ export default function Page() {
       <div className="h-screen flex flex-col items-start max-w-lg mx-auto ">
         <div className="lg:my-28 my-10 px-8 mx-auto w-full h-full">
           {/* Nav */}
-          <div className="">
+          <div className="fixed">
             <Navbar />
           </div>
 
-          <div className="h-full">{CurrentView ? <CurrentView /> : null}</div>
+          <div className="h-full my-12">
+            {CurrentView ? <CurrentView /> : null}
+          </div>
         </div>
       </div>
     </LoadingLayout>

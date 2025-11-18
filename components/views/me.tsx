@@ -1,5 +1,6 @@
 "use client";
-import { ChevronRight } from "lucide-react";
+import { ChevronRight, HomeIcon } from "lucide-react";
+import { useRouter } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -14,6 +15,11 @@ export default function Me() {
    * store
    */
   const { setPage } = usePageStore();
+
+  /**
+   * Navigation
+   */
+  const router = useRouter();
 
   const skills = [
     {
@@ -63,7 +69,7 @@ export default function Me() {
       transition={{ duration: 0.3, ease: "easeInOut" }}
       viewOptions={{ margin: "0px 0px -350px 0px" }}
     >
-      <div className="py-4 font-sans">
+      <div className="py-4 font-sans ">
         <div className="flex flex-col space-y-1">
           <section className="">
             <h1 className="text-lg flex gap-1 text-neutral-900">
@@ -137,7 +143,7 @@ export default function Me() {
               </section>
 
               <section>
-                <p className="lg:text-sm text-xs leading-loose">
+                <p className="lg:text-sm text-xs leading-relaxed">
                   {c.description}
                 </p>
               </section>
@@ -162,7 +168,18 @@ export default function Me() {
           ))}
         </div>
       </div>
-      <div className="flex justify-end">
+      <div className="flex justify-between items-center my-4">
+        <Button
+          className="rounded-full"
+          onClick={() => {
+            router.push("/");
+          }}
+          size={"lg"}
+        >
+          <HomeIcon className="w-4 h-4" />
+          Home
+        </Button>
+
         <Button
           className="rounded-full"
           onClick={() => {
@@ -170,7 +187,7 @@ export default function Me() {
           }}
           size={"lg"}
         >
-          Next <ChevronRight />
+          Next <ChevronRight className="w-4 h-4" />
         </Button>
       </div>
     </InView>

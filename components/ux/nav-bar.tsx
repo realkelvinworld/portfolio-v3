@@ -14,7 +14,7 @@ export default function Navbar() {
   const { page, setPage } = usePageStore();
 
   return (
-    <div className="flex">
+    <div className="flex z-[99999]">
       {menuItems.map((n, index) => (
         <Tooltip key={index}>
           <div className="flex gap-2 -ml-2 hover:z-50">
