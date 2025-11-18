@@ -72,9 +72,9 @@ export default function Home() {
         <div className="absolute inset-0 flex flex-col items-center justify-center p-6">
           <div className="flex flex-col items-center gap-2">
             <div className="px-4 py-1 rounded-full border text-xs tracking-wide bg-neutral-50 ">
-              <span className="text-neutral-500">Software</span>
+              <span className="text-neutral-500">Tech</span>
               <span className="mx-2 text-neutral-300">/</span>
-              <span className="font-semibold text-neutral-900 ">Engineer</span>
+              <span className="font-semibold text-neutral-900 ">Creator</span>
             </div>
             <h1 className="text-4xl md:text-5xl font-bold text-white text-center">
               Kumordzi Kelvin Selassie
