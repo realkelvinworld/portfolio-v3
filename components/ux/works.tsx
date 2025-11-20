@@ -76,11 +76,11 @@ export function WorkCards() {
                       }}
                     />
                     <div className="flex flex-col items-start justify-center space-y-0">
-                      <MorphingDialogTitle className=" font-bold text-gray-800 sm:text-xs">
+                      <MorphingDialogTitle className=" text-left font-bold text-gray-600">
                         {w.title}
                       </MorphingDialogTitle>
 
-                      <MorphingDialogSubtitle className="text-sm ">
+                      <MorphingDialogSubtitle className="text-sm text-left ">
                         {w.subTitle}
                       </MorphingDialogSubtitle>
                       <p className="text-xs ">{w.role}</p>
