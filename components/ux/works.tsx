@@ -90,7 +90,7 @@ export function WorkCards() {
                     style={{
                       borderRadius: "12px",
                     }}
-                    className="relative h-[500px] lg:w-[350px] w-80 border bg-white"
+                    className="relative h-[530px] lg:w-[350px] w-80 border bg-white"
                   >
                     <ScrollArea className="h-[90vh]" type="scroll">
                       <div className="relative p-6">
@@ -116,7 +116,7 @@ export function WorkCards() {
                             <p>{w.description}</p>
                           </div>
                           <Link
-                            className="mt-2 items-center flex text-zinc-400 underline"
+                            className="mt-2 items-center flex text-zinc-400 underline line-clamp-2"
                             href={w.link}
                             target="_blank"
                             rel="noopener noreferrer"
