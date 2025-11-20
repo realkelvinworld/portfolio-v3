@@ -36,7 +36,7 @@ export default function Mywork() {
         </p>
         <WorkCards />
 
-        <div className="flex justify-between items-center my-8">
+        <div className="flex justify-between items-center my-3">
           <Button
             className="rounded-full"
             onClick={() => {

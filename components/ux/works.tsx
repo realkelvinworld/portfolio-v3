@@ -22,7 +22,7 @@ import { Works } from "../local/db";
 
 export function WorkCards() {
   return (
-    <div className="my-10 flex flex-col  space-y-10 mb-40">
+    <div className="my-10 flex flex-col  space-y-10">
       <InView
         viewOptions={{ once: true, margin: "0px 0px -250px 0px" }}
         variants={{
@@ -79,9 +79,11 @@ export function WorkCards() {
                       <MorphingDialogTitle className="text-[10px] font-medium text-black sm:text-xs">
                         {w.title}
                       </MorphingDialogTitle>
+
                       <MorphingDialogSubtitle className="text-[10px] text-gray-600 sm:text-xs">
                         {w.subTitle}
                       </MorphingDialogSubtitle>
+                      <p className="text-xs font-mono ">{w.role}</p>
                     </div>
                   </div>
                 </MorphingDialogTrigger>
@@ -90,7 +92,7 @@ export function WorkCards() {
                     style={{
                       borderRadius: "12px",
                     }}
-                    className="relative h-[520px] lg:w-[350px] w-80 border bg-white"
+                    className="relative lg:h-[550px] h-[500px] lg:w-[350px] w-80 border bg-white overflow-y-auto"
                   >
                     <ScrollArea className="h-[90vh]" type="scroll">
                       <div className="relative p-6">
@@ -112,18 +114,21 @@ export function WorkCards() {
                           <MorphingDialogSubtitle className="font-light text-gray-400">
                             {w.subTitle}
                           </MorphingDialogSubtitle>
+                          <p className="text-xs font-mono">{w.role}</p>
                           <div className="mt-4 text-sm text-gray-700">
                             <p>{w.description}</p>
                           </div>
-                          <Link
-                            className="mt-2 items-center flex text-zinc-400 underline truncate max-w-[250px]"
-                            href={w.link}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <Link2 className="h-5 w-5 mt-1" />
-                            {w.link}
-                          </Link>
+                          {w.link && (
+                            <Link
+                              className="mt-2 items-center flex text-zinc-400 underline truncate max-w-[250px]"
+                              href={w.link}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <Link2 className="h-5 w-5 mt-1" />
+                              {w.link}
+                            </Link>
+                          )}
                         </div>
                       </div>
                     </ScrollArea>

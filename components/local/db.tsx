@@ -1,4 +1,11 @@
-import { Buildaf, Dieters, Passport, ZediWork } from "@/public/images";
+import {
+  Buildaf,
+  Comms360,
+  Dieters,
+  Metric,
+  Passport,
+  ZediWork,
+} from "@/public/images";
 
 export const Works = [
   {
@@ -6,8 +13,8 @@ export const Works = [
     slug: "zedi",
     title: "Zedi",
 
-    role: "Lead Front End Engineer and UI/UX Designer",
-    subTitle: "Money Transfer App",
+    role: "Lead Front End Engineer and UI/UX",
+    subTitle: "Crypto to fiat platform",
     description:
       "Zedi is a mobile app that makes managing crypto and Cedis easy. Convert any supported cryptocurrency to Cedis, pay bills, and send money all in one simple app.",
     link: "https://zedi.app",
@@ -21,10 +28,44 @@ export const Works = [
   },
   {
     id: 2,
+    slug: "metric",
+    title: "Metric",
+    role: "Front End Engineer",
+    subTitle: "Identity Verification Software",
+    description:
+      "Metric Identity is a SaaS-based facial verification technology that enables organisations to streamline KYC requirements, and prevent fraud in real-time.",
+    link: "https://auth.metric.africa/",
+
+    images: {
+      src: Metric,
+      alt: "metric",
+    },
+
+    tags: ["#Nextjs", "#Tailwindcss", "#Typescript", "#Framer Motion"],
+  },
+  {
+    id: 3,
+    slug: "comms-360",
+    title: "COMMS360",
+    role: "Front End Engineer",
+    subTitle: "Communication as a service platform",
+    description:
+      "COMMS360 is a multi-channel communications platform designed to streamline messaging, event management, contact organization, and reporting in one centralized hub.",
+    link: "https://comms360.africa/auth/login",
+
+    images: {
+      src: Comms360,
+      alt: "Zedi app",
+    },
+
+    tags: ["#Nextjs", "#Tailwindcss", "#Typescript", "#Framer Motion"],
+  },
+  {
+    id: 4,
     slug: "dieters",
     title: "Dieters Foods",
 
-    role: "Lead Front End Engineer and UI/UX Designer",
+    role: "Lead Front End Engineer and UI/UX",
     subTitle: "Nutrition on the go",
     description:
       "Dieters Foods is a health-focused snack company providing delicious, guilt-free snacks made from real ingredients. Their e-commerce website allows customers to easily browse and purchase products online, while the admin section helps efficiently manage orders and inventory for seamless business operations",
@@ -44,9 +85,10 @@ export const Works = [
     ],
   },
   {
-    id: 4,
+    id: 5,
     slug: "ghana-passport",
     title: "Ghana passport delivery & management",
+    role: "Lead Front End Engineer",
     subTitle: "Passport delivery & management",
     description:
       "The Ghana Passport Delivery & Management System streamlines the passport application and delivery process with secure document handling, real-time tracking, and efficient customer support making it easier for citizens to get their passports.",
@@ -60,7 +102,7 @@ export const Works = [
     tags: ["#Nextjs", "#Tailwindcss", "#Typescript", "#Framer Motion", "#SCSS"],
   },
   {
-    id: 3,
+    id: 6,
     slug: "buildafestate",
     title: "Buildaf Estate",
     subTitle: "A leading Real Estate developer in Ghana",
@@ -72,7 +114,7 @@ export const Works = [
       src: Buildaf,
       alt: "Buildaf Estates property exterior view",
     },
-
+    role: "Lead Front End Engineer",
     tags: ["#Wordpress"],
   },
 
