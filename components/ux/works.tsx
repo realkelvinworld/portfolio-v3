@@ -70,20 +70,20 @@ export function WorkCards() {
                         typeof w.images === "string" ? w.images : w.images.src
                       }
                       alt={w.images.alt}
-                      className="h-8 w-8 object-cover object-top"
+                      className="h-10 w-10 object-cover object-top"
                       style={{
                         borderRadius: "4px",
                       }}
                     />
                     <div className="flex flex-col items-start justify-center space-y-0">
-                      <MorphingDialogTitle className="text-[10px] font-medium text-black sm:text-xs">
+                      <MorphingDialogTitle className=" font-bold text-gray-800 sm:text-xs">
                         {w.title}
                       </MorphingDialogTitle>
 
-                      <MorphingDialogSubtitle className="text-[11px] text-gray-600">
+                      <MorphingDialogSubtitle className="text-sm ">
                         {w.subTitle}
                       </MorphingDialogSubtitle>
-                      <p className="text-[10px] text-gray-400">{w.role}</p>
+                      <p className="text-xs ">{w.role}</p>
                     </div>
                   </div>
                 </MorphingDialogTrigger>
@@ -92,7 +92,7 @@ export function WorkCards() {
                     style={{
                       borderRadius: "12px",
                     }}
-                    className="relative lg:h-[550px] h-[500px] lg:w-[350px] w-80 border bg-white overflow-y-auto"
+                    className="relative lg:h-[550px] h-[500px] lg:w-[350px] w-80 border bg-white overflow-y-auto scrollbar-none"
                   >
                     <ScrollArea className="h-[90vh]" type="scroll">
                       <div className="relative p-6">
@@ -104,17 +104,17 @@ export function WorkCards() {
                                 : w.images.src
                             }
                             alt={w.title}
-                            className="h-auto w-[200px]"
+                            className="h-auto w-[300px]"
                           />
                         </div>
                         <div className="">
                           <MorphingDialogTitle className="text-black">
                             {w.title}
                           </MorphingDialogTitle>
-                          <MorphingDialogSubtitle className="font-light text-gray-400">
+                          <MorphingDialogSubtitle className="font-light text-gray-800">
                             {w.subTitle}
                           </MorphingDialogSubtitle>
-                          <p className="text-[11px] text-gray-600 ">{w.role}</p>
+                          <p className="text-xs font-semibold">{w.role}</p>
                           <div className="mt-4 text-sm text-gray-700">
                             <p>{w.description}</p>
                           </div>
