@@ -83,7 +83,7 @@ export function WorkCards() {
                       <MorphingDialogSubtitle className="text-[10px] text-gray-600 sm:text-xs">
                         {w.subTitle}
                       </MorphingDialogSubtitle>
-                      <p className="text-xs font-mono ">{w.role}</p>
+                      <p className="text-xs ">{w.role}</p>
                     </div>
                   </div>
                 </MorphingDialogTrigger>
@@ -114,7 +114,7 @@ export function WorkCards() {
                           <MorphingDialogSubtitle className="font-light text-gray-400">
                             {w.subTitle}
                           </MorphingDialogSubtitle>
-                          <p className="text-xs font-mono">{w.role}</p>
+                          <p className="text-xs ">{w.role}</p>
                           <div className="mt-4 text-sm text-gray-700">
                             <p>{w.description}</p>
                           </div>
