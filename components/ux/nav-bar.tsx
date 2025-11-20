@@ -1,11 +1,12 @@
 "use client";
+
+import { usePageStore } from "@/store/usePageStore";
 import { menuItems } from "@/routes";
 import {
   Tooltip,
   TooltipContent,
   TooltipTrigger,
 } from "@/components/ui/tooltip";
-import { usePageStore } from "@/store/usePageStore";
 
 export default function Navbar() {
   /**
@@ -14,7 +15,7 @@ export default function Navbar() {
   const { page, setPage } = usePageStore();
 
   return (
-    <div className="flex z-[99999]">
+    <div className="flex">
       {menuItems.map((n, index) => (
         <Tooltip key={index}>
           <div className="flex gap-2 -ml-2 hover:z-50">

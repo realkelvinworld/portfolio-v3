@@ -1,6 +1,7 @@
-import { TextEffect } from "../motion-primitives/text-effect";
 import { AnimatePresence, motion } from "motion/react";
 import { useState, useEffect } from "react";
+
+import { TextEffect } from "../motion-primitives/text-effect";
 
 export function LoadingAnimation() {
   const [isVisible, setIsVisible] = useState(true);

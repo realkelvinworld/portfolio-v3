@@ -1,10 +1,12 @@
 "use client";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { Button } from "../ui/button";
-import { InView } from "../ui/in-view";
+
+import { usePageStore } from "@/store/usePageStore";
+
 import { ProgressiveBlurImage } from "../ux/blur-image";
 import { Experience } from "../ux/experience";
-import { usePageStore } from "@/store/usePageStore";
+import { InView } from "../ui/in-view";
+import { Button } from "../ui/button";
 
 export default function About() {
   /**

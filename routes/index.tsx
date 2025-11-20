@@ -1,8 +1,8 @@
-import About from "@/components/views/about";
 import Contact from "@/components/views/contact";
-import Me from "@/components/views/me";
 import Mywork from "@/components/views/my-work";
 import Skills from "@/components/views/skills";
+import About from "@/components/views/about";
+import Me from "@/components/views/me";
 import {
   AddressBookIcon,
   CodeIcon,

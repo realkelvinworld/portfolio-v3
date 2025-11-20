@@ -1,9 +1,9 @@
 "use client";
 
+import LoadingLayout from "@/components/animations/loading-layout";
 import { usePageStore } from "@/store/usePageStore";
 import Navbar from "@/components/ux/nav-bar";
 import { menuItems } from "@/routes";
-import LoadingLayout from "@/components/animations/loading-layout";
 
 export default function Page() {
   /**
@@ -17,11 +17,11 @@ export default function Page() {
       <div className="min-h-screen flex flex-col items-start max-w-lg mx-auto ">
         <div className="lg:my-28 my-10 px-8 mx-auto w-full h-full">
           {/* Nav */}
-          <div className="fixed">
+          <div className="fixed z-[9999]">
             <Navbar />
           </div>
 
-          <div className="h-full my-12">
+          <div className="h-full my-12 overflow-hidden">
             {CurrentView ? <CurrentView /> : null}
           </div>
         </div>

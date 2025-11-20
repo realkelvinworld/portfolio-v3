@@ -1,11 +1,11 @@
 "use client";
-import { HomeIcon } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { HomeIcon } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
-import { routes } from "@/routes";
-import Beams from "@/components/Beams";
 import LoadingLayout from "@/components/animations/loading-layout";
+import { Button } from "@/components/ui/button";
+import Beams from "@/components/Beams";
+import { routes } from "@/routes";
 
 export default function Home() {
   /**

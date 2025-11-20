@@ -1,12 +1,14 @@
+import Image from "next/image";
+
 import { ProgressiveBlur } from "@/components/motion-primitives/progressive-blur";
 import { MeNow } from "@/public/images";
-import Image from "next/image";
+
 import { TextEffect } from "../motion-primitives/text-effect";
 import { Tilt } from "../motion-primitives/tilt";
 
 export function ProgressiveBlurImage() {
   return (
-    <div>
+    <div className="-z-50">
       <Tilt rotationFactor={8} isRevese className="">
         <div className="relative my-4 aspect-square w-[300px] overflow-hidden rounded-lg">
           <Image

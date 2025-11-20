@@ -1,6 +1,7 @@
 "use client";
-import { LoadingAnimation } from "@/components/animations/loading";
 import { useEffect, useState } from "react";
+
+import { LoadingAnimation } from "@/components/animations/loading";
 
 export default function LoadingLayout({
   children,
