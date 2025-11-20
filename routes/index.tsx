@@ -33,12 +33,6 @@ export const menuItems = [
     route: () => <About />,
   },
   {
-    title: "Skills",
-    slug: "skills",
-    icon: <CodeIcon weight="bold" />,
-    route: () => <Skills />,
-  },
-  {
     title: "My work",
     slug: "works",
     icon: <NotchesIcon weight="bold" />,

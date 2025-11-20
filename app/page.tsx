@@ -43,33 +43,7 @@ export default function Home() {
         waveFrequency={3}
         waveSpeed={0.03}
       /> */}
-        {/* <div className="absolute top-3 p-6">
-        <p className="font-polySans font-bold text-4xl text-white  max-w-[12rem]">
-          Kelvin Selassie Kumordzi
-        </p>
 
-        <p className="text-white text-base  font-medium">Software Engineer</p>
-        <div className="flex flex-col space-y-0.5 my-4 text-white">
-          <Link
-            href={"https://github.com/realkelvinworld"}
-            className="transition-transform duration-200 hover:scale-105 font-semibold"
-          >
-            Github
-          </Link>
-          <Link
-            href={"https://linkedin.com/in/kelvin-kumordzi-2276a61ba"}
-            className="transition-transform duration-200 hover:scale-105 font-semibold"
-          >
-            LinkedIn
-          </Link>
-          <Link
-            href={"mailto:kelvin.kumordzi@inpathgroup.africa"}
-            className="transition-transform duration-200 hover:scale-105 font-semibold"
-          >
-            Email
-          </Link>
-        </div>
-      </div> */}
         <div className="absolute inset-0 flex flex-col items-center justify-center p-6">
           <div className="flex flex-col items-center gap-2">
             <div className="px-4 py-1 rounded-full border text-xs tracking-wide bg-neutral-50 ">

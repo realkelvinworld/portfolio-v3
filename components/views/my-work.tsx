@@ -40,7 +40,7 @@ export default function Mywork() {
           <Button
             className="rounded-full"
             onClick={() => {
-              setPage("skills");
+              setPage("about");
             }}
             size={"lg"}
           >

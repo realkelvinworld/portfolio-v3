@@ -86,7 +86,7 @@ export default function About() {
           <Button
             className="rounded-full"
             onClick={() => {
-              setPage("skills");
+              setPage("works");
             }}
             size={"lg"}
           >
