@@ -90,7 +90,7 @@ export function WorkCards() {
                     style={{
                       borderRadius: "12px",
                     }}
-                    className="relative h-[530px] lg:w-[350px] w-80 border bg-white"
+                    className="relative h-[520px] lg:w-[350px] w-80 border bg-white"
                   >
                     <ScrollArea className="h-[90vh]" type="scroll">
                       <div className="relative p-6">
@@ -101,7 +101,7 @@ export function WorkCards() {
                                 ? w.images
                                 : w.images.src
                             }
-                            alt="What I Talk About When I Talk About Running - book cover"
+                            alt={w.title}
                             className="h-auto w-[200px]"
                           />
                         </div>
@@ -116,7 +116,7 @@ export function WorkCards() {
                             <p>{w.description}</p>
                           </div>
                           <Link
-                            className="mt-2 items-center flex text-zinc-400 underline line-clamp-2"
+                            className="mt-2 items-center flex text-zinc-400 underline truncate max-w-[250px]"
                             href={w.link}
                             target="_blank"
                             rel="noopener noreferrer"

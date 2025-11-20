@@ -49,7 +49,7 @@ export const Works = [
     title: "Ghana passport delivery & management",
     subTitle: "Passport delivery & management",
     description:
-      "The Ghana Passport Delivery & Management System is designed to streamline the application and delivery process for Ghanaian passports. This platform ensures secure document handling, real-time application tracking, and efficient customer support, making it easier for citizens to obtain their passports.",
+      "The Ghana Passport Delivery & Management System streamlines the passport application and delivery process with secure document handling, real-time tracking, and efficient customer support making it easier for citizens to get their passports.",
     link: "https://app.ghanapassportdelivery.com",
 
     images: {
@@ -65,7 +65,7 @@ export const Works = [
     title: "Buildaf Estate",
     subTitle: "A leading Real Estate developer in Ghana",
     description:
-      "Buildaf Estates is a top real estate developer in Ghana, committed to quality and customer satisfaction. This project highlights their vision of setting new standards in luxury living.I designed this platform to showcase their properties with a seamless, user-friendly experience, reflecting their dedication to excellence.",
+      "Buildaf Estates is a leading real estate developer in Ghana, focused on quality and customer satisfaction. This platform showcases their properties with a clean, user-friendly experience that reflects their commitment to excellence.",
     link: "https://buildafghana.com",
 
     images: {
