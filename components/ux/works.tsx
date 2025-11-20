@@ -90,7 +90,7 @@ export function WorkCards() {
                     style={{
                       borderRadius: "12px",
                     }}
-                    className="relative h-[400px] lg:w-[350px] w-85 border bg-white"
+                    className="relative h-[500px] lg:w-[350px] w-80 border bg-white"
                   >
                     <ScrollArea className="h-[90vh]" type="scroll">
                       <div className="relative p-6">
