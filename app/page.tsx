@@ -20,6 +20,7 @@ export default function Home() {
           width: "100%",
           height: "100vh",
           position: "relative",
+          backgroundColor: "#000",
         }}
       >
         <Beams
