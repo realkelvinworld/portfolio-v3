@@ -45,9 +45,8 @@ export function Experience() {
           <p className="text-zinc-500 dark:text-zinc-400 text-sm">
             I handle all web infrastructure, turn designs into clean and
             responsive pages, and work closely with the backend and mobile teams
-            to keep everything connected smoothly. I also helped build the admin
-            dashboard and continue improving performance, UX, and the overall
-            flow of the platform.
+            to keep everything connected smoothly by improving performance, UX,
+            and the overall flow of the platform.
           </p>
         </AccordionContent>
       </AccordionItem>
